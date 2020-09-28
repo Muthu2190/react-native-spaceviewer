@@ -13,8 +13,5 @@ steps:
 - script: yarn install
   displayName: 'Run yarn install'
 
-- script: yarn run-android
-  displayName: 'run yarn android'
-
 - script: yarn run-ios
   displayName: 'run yarn ios'
