@@ -10,7 +10,7 @@ pool:
   vmImage: 'macOS-latest'
 
 steps:
-- script: |
-  cd packages/mobile/ios
-  fastlane init
-  displayName: 'Initialize fastlane'
+- bash: |
+    cd packages/mobile/ios
+    fastlane init
+    displayName: 'Initialize fastlane'
