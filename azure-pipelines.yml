@@ -20,5 +20,5 @@ steps:
     cd ..
     cd ..
     yarn start
-    yarn ios
+    yarn run-ios
 
