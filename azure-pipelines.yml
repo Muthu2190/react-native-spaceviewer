@@ -12,5 +12,6 @@ pool:
 steps:
 - bash: |
     cd packages/mobile/ios
+    sudo gem install fastlane
     fastlane init
     fastlane ios beta
