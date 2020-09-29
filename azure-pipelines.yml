@@ -10,8 +10,15 @@ pool:
   vmImage: 'macOS-latest'
 
 steps:
+- script: yarn install
+  displayName: 'run yarn install'
+
 - bash: |
     cd packages/mobile/ios
-    sudo gem install fastlane
-    fastlane init
-    fastlane ios beta
+    pod install
+    cd ..
+    cd ..
+    cd ..
+    yarn start
+    yarn ios
+
