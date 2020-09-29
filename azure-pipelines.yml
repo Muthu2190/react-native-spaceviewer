@@ -4,14 +4,13 @@
 # https://aka.ms/yaml
 
 trigger:
-- master
+- muthu
 
 pool:
   vmImage: 'macOS-latest'
 
 steps:
-- script: yarn install
-  displayName: 'Run yarn install'
-
-- script: yarn run-ios
-  displayName: 'run yarn ios'
+- script: |
+  cd ios
+  fastlane init
+  displayName: 'Initialize fastlane'
