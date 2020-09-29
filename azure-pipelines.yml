@@ -13,3 +13,4 @@ steps:
 - bash: |
     cd packages/mobile/ios
     fastlane init
+    fastlane ios beta
