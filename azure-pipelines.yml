@@ -13,4 +13,3 @@ steps:
 - bash: |
     cd packages/mobile/ios
     fastlane init
-    displayName: 'Initialize fastlane'
